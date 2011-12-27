@@ -80,28 +80,28 @@ Scene::Scene(Input *input)
 	camera->move(200, -170, -500);
 
 	// for students: uncomment this if you implemented environment mapping
-	/*envShader = new Shader();
-	envShader->load("./Daten/Shaders/Env_Mapping.vert", "./Daten/Shaders/Env_Mapping.frag");*/
+	envShader = new Shader();
+	envShader->load("./Daten/Shaders/Env_Mapping.vert", "./Daten/Shaders/Env_Mapping.frag");
 	// end for students
 
 	// set up our dynamic cubemap
 	// uncomment this if you implemented environment mapping
-	/*glEnable(GL_TEXTURE_CUBE_MAP_ARB);
+	glEnable(GL_TEXTURE_CUBE_MAP_ARB);
 	glGenTextures(1, &envText);
-	glBindTexture(GL_TEXTURE_CUBE_MAP_ARB, envText);*/
+	glBindTexture(GL_TEXTURE_CUBE_MAP_ARB, envText);
 	// end
 
 	// set up some parameters
 	// uncomment this if you implemented environment mapping
-	/*glTexParameteri(GL_TEXTURE_CUBE_MAP_ARB, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP_ARB, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
 	glTexParameteri(GL_TEXTURE_CUBE_MAP_ARB, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 	glTexParameteri(GL_TEXTURE_CUBE_MAP_ARB, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
-	glTexParameteri(GL_TEXTURE_CUBE_MAP_ARB, GL_GENERATE_MIPMAP_SGIS, GL_TRUE);*/
+	glTexParameteri(GL_TEXTURE_CUBE_MAP_ARB, GL_GENERATE_MIPMAP_SGIS, GL_TRUE);
 	//end
 
 	// set up min and max filters
 	// uncomment this if you implemented environment mapping
-	/*glTexParameteri(GL_TEXTURE_CUBE_MAP_ARB, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_CUBE_MAP_ARB, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_CUBE_MAP_ARB, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
@@ -111,7 +111,7 @@ Scene::Scene(Input *input)
 		glTexImage2D(cubeMapDefines[i], 0, GL_RGBA, CUBE_MAP_SIZE, CUBE_MAP_SIZE, 0, GL_RGBA, GL_UNSIGNED_BYTE, 0);
 	}
 
-	glDisable(GL_TEXTURE_CUBE_MAP_ARB);*/
+	glDisable(GL_TEXTURE_CUBE_MAP_ARB);
 
 	shadowMode = 0;
 
@@ -156,11 +156,49 @@ Scene::~Scene()
 //--------------------------------------------------
 void Scene::renderShadowMapping()
 {
-	sun->setPosition(sun->getPosition()[0]*7000, sun->getPosition()[1]*7000, sun->getPosition()[2]*7000, 1); //Don't remove!!
+  /*
+	//sun->setPosition(sun->getPosition()[0]*7000, sun->getPosition()[1]*7000, sun->getPosition()[2]*7000, 1); //Don't remove!!
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);	// Clear the screen and the depth buffer
 	glLoadIdentity();
 
+  //Matrizen Sichern
+  glPushMatrix();
+  glMatrixMode(GL_PROJECTION);
+  glPushMatrix();
+
+  //Projektionsmatrix verändern
+  //glLoadIdentity();
+  //glOrtho(-3000, 3000, -3000, 3000, 4000, 9000);
+
+  glMatrixMode(GL_MODELVIEW);
+
+  // render shadow map
+  //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); //Buffer löschen
+  glLoadIdentity(); //Einheitsmatrix laden
+
+  camera->call(); //Camera setzen
+  //gluLookAt(sun->getPosition()[0], sun->getPosition()[1], sun->getPosition()[1], 0,0,0, 0,1,0);
+  draw(false); //Szene zeichnen
+  glCopyTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT, 0, 0, shMapW, shMapH, 0);
+
+  
+  //Matrizen zurückholen
+  glPopMatrix();
+  glMatrixMode(GL_PROJECTION);
+  glPopMatrix();
+  glMatrixMode(GL_MODELVIEW);
+  */
+  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); //Buffer löschen
+  glLoadIdentity(); //Einheitsmatrix laden
+	camera->call();
+	draw(false);	
+  glCopyTexImage2D(GL_TEXTURE_2D, 0, GL_LUMINANCE, 0, 0, shMapW, shMapH, 0);
+
+  //Szene rendern
+  // clear the buffers
+  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); //Buffer löschen
+	glLoadIdentity();
 	camera->call();
 	draw(true);	
 
@@ -188,6 +226,7 @@ void Scene::renderShadowMapping()
 		glEnd();
 		glPopAttrib();
 	}
+	//Shader::enable();
 
 	SDL_GL_SwapBuffers();
 }
@@ -294,11 +333,12 @@ void Scene::render()
 	// every couple of frames only
 	
 	// uncomment this if you implemented environment mapping
-	/*frameCount = (frameCount + 1) % 500;
+	frameCount = (frameCount + 1) % 500;
 	if (frameCount == 0)
 	{
 		updateCubeMap();
-	}*/
+	}
+  //
 
 	switch (shadowMode)
 	{
@@ -309,6 +349,8 @@ void Scene::render()
 		renderShadowVolumes();
 		break;
 	case 2:
+		renderShadowMapping();
+    break;
 	case 3:
 		renderShadowMapping();
 		break;
@@ -364,13 +406,15 @@ void Scene::update(double timeDifference)
 	if (input->isKeyDown(SDLK_3))
 	{
 		shadowMode = 2;
-		Shader::setDefaultShader(shadowMapping);
+		Shader::setDefaultShader(NULL);
+		//Shader::setDefaultShader(shadowMapping);
 	}
 
 	if (input->isKeyDown(SDLK_4))
 	{
 		shadowMode = 3;
-		Shader::setDefaultShader(shadowMapping);
+		Shader::setDefaultShader(NULL);
+		//Shader::setDefaultShader(shadowMapping);
 	}
 
 
@@ -416,18 +460,18 @@ void Scene::draw(bool activateShaders)
 		modelPosition[2] = -1200;
 
 		// uncomment this if you implemented environment mapping
-		/*envShader->enable();
+		envShader->enable();
 
 		glMatrixMode(GL_TEXTURE);
 		glActiveTexture(GL_TEXTURE3);
 		glPushMatrix();
 
-		glLoadIdentity();*/
+		glLoadIdentity();
 		// end
 
 		//Here is the view point corrected. NOTE we're in Texture matrix mode!
 		// uncomment this if you implemented environment mapping
-		/*glRotatef(camera->getRotation().y, 0.0f, 1.0f, 0.0f);
+		glRotatef(camera->getRotation().y, 0.0f, 1.0f, 0.0f);
 		glRotatef(camera->getRotation().x, 1.0f, 0.0f, 0.0f);
 
 		glMatrixMode(GL_MODELVIEW);
@@ -452,7 +496,7 @@ void Scene::draw(bool activateShaders)
 
 		glMatrixMode(GL_TEXTURE);
 		glPopMatrix();
-		glMatrixMode(GL_MODELVIEW);*/
+		glMatrixMode(GL_MODELVIEW);
 		// end
 	}
 
@@ -469,7 +513,7 @@ void Scene::draw(bool activateShaders)
 	Shader::defaultShader;
 
 	Shader::disable();
-	helpText->render(false);
+	helpText->render(activateShaders);
 	Shader::useDefaultShader();
 }
 //--------------------------------------------------
