@@ -1,0 +1,6 @@
+<area shape="rect" id="node3" href="$classVector3.html#75af980b2fd0c531b568ac9cb4021b75" title="Vector3::crossProduct" alt="" coords="248,5,400,33">
+<area shape="rect" id="node5" href="$classVector3.html#2f1fdf1c794d6337892d5502459d5ccb" title="Vector3::dotProduct" alt="" coords="256,55,392,83">
+<area shape="rect" id="node7" href="$classLight.html#9f57ad93641207810fda44ba6bb9cd18" title="Light::getPosition" alt="" coords="263,106,385,134">
+<area shape="rect" id="node9" href="$classCamera.html#323fb8622202612a3f464e1635d67de8" title="Camera::getPosition" alt="" coords="255,157,393,185">
+<area shape="rect" id="node11" href="$classMatrix4.html#8412458379c9a664437d74e6a1a28443" title="Matrix4::inverse" alt="" coords="268,207,380,235">
+<area shape="rect" id="node13" href="$classVector3.html#9b147a862a1b86ed2e5b735d19da3da1" title="Vector3::normalize" alt="" coords="259,258,389,286">

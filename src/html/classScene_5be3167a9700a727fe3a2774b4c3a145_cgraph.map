@@ -1,0 +1,12 @@
+<area shape="rect" id="node3" href="$classInput.html#8d7903a04d87978a50799fff3eb6415b" title="Input::getMouseMotionX" alt="" coords="165,5,325,33">
+<area shape="rect" id="node5" href="$classInput.html#d3e785130c8f3649d054eb7a34ee77e6" title="Input::getMouseMotionY" alt="" coords="164,55,327,83">
+<area shape="rect" id="node7" href="$classSkybox.html#1b42b873ba60036126ab24d81eec8f84" title="Skybox::getSunDirection" alt="" coords="163,106,328,134">
+<area shape="rect" id="node9" href="$classInput.html#0cb6fe24f97775359b02b310b018052f" title="Input::isKeyDown" alt="" coords="184,157,307,185">
+<area shape="rect" id="node11" href="$classCamera.html#508e66f52e3b77ff209c01dc415d84da" title="Camera::move" alt="" coords="193,207,297,235">
+<area shape="rect" id="node13" href="$classCamera.html#e4773e33fbaccf914643b31639b48269" title="Camera::rotate" alt="" coords="192,258,299,286">
+<area shape="rect" id="node15" href="$classShader.html#b428acfc9590654ece4368c24f1bb70f" title="Shader::setDefaultShader" alt="" coords="161,309,329,337">
+<area shape="rect" id="node17" href="$classLight.html#0533c67ab3b39a35c2464ef6bbf97bd9" title="Light::setDiffuse" alt="" coords="188,359,303,387">
+<area shape="rect" id="node19" href="$classLight.html#8d894f4b7a8b54410aee3d1c2d42a81a" title="Light::setPosition" alt="" coords="184,410,307,438">
+<area shape="rect" id="node21" href="$classText.html#a3a9c86fa24a51d37af6f6f99a423aee" title="Text::setText" alt="" coords="197,461,293,489">
+<area shape="rect" id="node23" href="$classSkybox.html#403cb15032c5ce6af883617821ba7634" title="Skybox::update" alt="" coords="189,511,301,539">
+<area shape="rect" id="node25" href="$classParticleSystem.html#2786679d0a74a4e5cd67157134e578d9" title="ParticleSystem::update" alt="" coords="167,562,324,590">

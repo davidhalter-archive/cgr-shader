@@ -1,0 +1,551 @@
+Error Log File:
+---------------------------
+Using GLEW Version: 1.5.0
+
+
+OpenGL 2.0 available
+
+
+
+loading objects...
+
+
+Load File: ./Daten/Models/torch1.obj
+
+Couldn't load the material: ./Daten/Materials/iron.txt
+
+Load Texture iron
+
+Could not load BMP texture: ./Daten/Textures/iron.bmp
+
+Load PNG Texture iron
+
+Couldn't load the material: ./Daten/Materials/iron.txt
+
+Load File: ./Daten/Models/torch1.obj
+
+Couldn't load the material: ./Daten/Materials/iron.txt
+
+Couldn't load the material: ./Daten/Materials/iron.txt
+
+Load File: ./Daten/Models/eingang.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load Texture holz1
+
+Load material: ./Daten/Materials/holz1.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load Texture holz2
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load material: ./Daten/Materials/holz1.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/holz1.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load Texture mur_Ambiant
+
+Load Texture mur_Hauteur
+
+Load Texture mur_NormalMap
+
+
+loading shader...
+
+./Daten/Shaders/Bump_Mapping.vert: Vertex shader was successfully compiled to run on hardware.
+
+
+./Daten/Shaders/Bump_Mapping.frag: Fragment shader was successfully compiled to run on hardware.
+
+Fragment shader(s) linked, vertex shader(s) linked. 
+ 
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load File: ./Daten/Models/eckturm.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/Mauerdickhoch.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/Mauerdickhoch.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/MauerdickhochSchmal.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/MauerdickhochSchmal.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/MaueruntenSchmal.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/MaueruntenSchmal.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/ecke100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/Mauerunten.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/Mauerunten.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/gewoelbe.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermittor100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/Mauerdickhoch.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/Mauerdickhoch.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/turm12mTor.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/tower_extension.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/turm12mAusgang.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/turmzinne.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/Mauerdickhoch.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/Mauerdickhoch.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/Mauerdickhoch.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/Mauerunten.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/Mauerunten.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/ecke.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/MauerdickhochSchmal.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/MauerdickhochSchmal.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/Mauerdickhoch.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/Mauerdickhoch.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/eckturm.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Couldn't load the material: ./Daten/Materials/holz2.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/ecke100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/ecke100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/ecke100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/ecke100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/ecke100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/mauermitfenster100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/ecke100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/ecke100.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/Dach.obj
+
+Load material: ./Daten/Materials/holz1.txt
+
+Load File: ./Daten/Models/bridge.obj
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load material: ./Daten/Materials/mauer.txt
+
+Load File: ./Daten/Models/chain.obj
+
+Couldn't load the material: ./Daten/Materials/chain2.txt
+
+Load Texture chain2
+
+Could not load BMP texture: ./Daten/Textures/chain2.bmp
+
+Load PNG Texture chain2
+
+Couldn't load the material: ./Daten/Materials/chain2.txt
+
+Load File: ./Daten/Models/chain.obj
+
+Couldn't load the material: ./Daten/Materials/chain2.txt
+
+Couldn't load the material: ./Daten/Materials/chain2.txt
+
+Couldn't load the File: ./Daten/Models/.obj
+
+Load File: ./Daten/Models/mountain3.obj
+
+Couldn't load the material: ./Daten/Materials/green.txt
+
+Load Texture green
+
+Could not load BMP texture: ./Daten/Textures/green.bmp
+
+Load PNG Texture green
+
+Couldn't load the File: ./Daten/Models/sky.obj
+
+Load File: ./Daten/Models/sword1.obj
+
+Couldn't load the material: ./Daten/Materials/sword1_1.txt
+
+Load Texture sword1_1
+
+Load PNG Texture sun
+
+Load File: ./Daten/Models/water.obj
+
+Couldn't load the material: ./Daten/Materials/water.txt
+
+Load Texture water
+
+Could not load BMP texture: ./Daten/Textures/water.bmp
+
+Load PNG Texture water
+
+Load File: ./Daten/Models/ruestung_old.obj
+
+Couldn't load the material: ./Daten/Materials/metall.txt
+
+Load Texture metall
+
+Could not load BMP texture: ./Daten/Textures/metall.bmp
+
+Load PNG Texture metall
+
+Couldn't load the material: ./Daten/Materials/metall.txt
+
+Couldn't load the material: ./Daten/Materials/metall.txt
+
+Couldn't load the material: ./Daten/Materials/metall.txt
+
+Load PNG Texture fire
+
+Load PNG Texture fire2
+
+Load PNG Texture smoke
+
+Load PNG Texture font
+
+
+loading shader...
+
+./Daten/Shaders/Env_Mapping.vert: Vertex shader was successfully compiled to run on hardware.
+
+
+./Daten/Shaders/Env_Mapping.frag: Fragment shader was successfully compiled to run on hardware.
+
+Fragment shader(s) linked, vertex shader(s) linked. 
+ 
+
+
+loading shader...
+
+./Daten/Shaders/Shadow_Mapping.vert: Vertex shader was successfully compiled to run on hardware.
+
+
+./Daten/Shaders/Shadow_Mapping.frag: Fragment shader was successfully compiled to run on hardware.
+
+Fragment shader(s) linked, vertex shader(s) linked. 
+ 
+

@@ -1,0 +1,81 @@
+torch1 -285 170 700 0 0 0
+torch1 -13 170 700 0 0 0
+eingang -300 -50 700 0 0 0
+
+eckturm 0 -50 200 0 270 0
+Mauerdickhoch 300 -50 -100 0 90 0
+Mauerdickhoch 300 -50 -400 0 90 0
+MauerdickhochSchmal 300 -50 -600 0 90 0
+MauerdickhochSchmal 300 -50 -500 0 90 0
+MaueruntenSchmal 300 -50 -700 0 90 0
+MaueruntenSchmal -400 -50 -1300 0 180 0
+
+ecke100 -400 -50 -600 0 0 0
+Mauerunten 300 -50 -1000 0 90 0
+Mauerunten 300 -50 -1300 0 90 0
+gewoelbe 300 -50 -1300 0 180 0
+gewoelbe 300 -50 -1000 0 90 0
+gewoelbe 300 -50 -1000 0 180 0
+gewoelbe 300 -50 -700 0 90 0
+gewoelbe 0 -50 -1300 0 180 0
+gewoelbe 0 -50 -1300 0 270 0
+gewoelbe 0 -50 -1000 0 0 0
+gewoelbe 0 -50 -1000 0 90 0
+gewoelbe 0 -50 -1000 0 180 0
+gewoelbe 0 -50 -1000 0 270 0
+gewoelbe 0 -50 -700 0 0 0
+gewoelbe 0 -50 -700 0 90 0
+gewoelbe -300 -50 -1300 0 270 0
+gewoelbe -300 -50 -1000 0 0 0
+gewoelbe -300 -50 -1000 0 270 0
+gewoelbe -300 -50 -700 0 0 0
+mauermittor100 -300 -50 -600 0 0 0
+mauermitfenster100 0 -50 -600 0 0 0
+mauermitfenster100 -300 -50 -700 0 90 0
+mauermitfenster100 -300 -50 -1000 0 90 0
+
+Mauerdickhoch -300 -50 500 0 0 0
+Mauerdickhoch -600 -50 500 0 0 0
+
+turm12mTor -1500 -50 500 0 90 0
+tower_extension -1500 -550 500 0 90 0
+turm12mAusgang -1500 450 500 0 90 0
+turmzinne -1500 950 500 0 90 0
+
+Mauerdickhoch -1500 -50 -100 0 270 0
+Mauerdickhoch -1500 -50 -400 0 270 0
+Mauerdickhoch -1500 -50 -700 0 270 0
+
+Mauerunten -300 -50 -1300 0 180 0
+Mauerunten 0 -50 -1300 0 180 0
+ecke 300 -50 -1300 0 0 0
+
+MauerdickhochSchmal -500 -50 -1300 0 180 0
+MauerdickhochSchmal -600 -50 -1300 0 180 0
+Mauerdickhoch -900 -50 -1300 0 180 0
+Mauerdickhoch -1200 -50 -1300 0 180 0
+eckturm -1200 -50 -1000 0 90 0
+
+mauermitfenster100 -300 450 -1300 0 0 0
+mauermitfenster100 0 450 -1300 0 0 0
+mauermitfenster100 400 450 -700 0 90 0
+mauermitfenster100 400 450 -1000 0 90 0
+ecke100 400 450 -1400 0 180 0
+ecke100 300 450 -600 0 0 0
+ecke100 400 450 -700 0 180 0
+ecke100 -400 450 -1300 0 0 0
+ecke100 -300 450 -1400 0 180 0
+
+mauermitfenster100 -300 450 -700 0 90 0
+mauermitfenster100 -300 450 -1000 0 90 0
+mauermitfenster100 -300 450 -600 0 0 0
+mauermitfenster100 0 450 -600 0 0 0
+ecke100 -400 450 -600 0 0 0
+ecke100 -300 450 -700 0 180 0
+Dach 0 1200 -1000 0 180 0
+
+bridge -150 -60 2700 0 0 0
+
+
+chain -270 92 820 45 0 0
+chain  -30 92 820 45 0 0

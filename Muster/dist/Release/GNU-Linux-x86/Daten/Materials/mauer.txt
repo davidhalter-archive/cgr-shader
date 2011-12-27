@@ -1,0 +1,10 @@
+a 0.3 0.3 0.3 1.0
+d 1.0 1.0 1.0 1.0
+s 0.0 0.0 0.0 1.0
+e 0.0 0.0 0.0 0.0
+h 60.0
+t mur_Ambiant
+t mur_Hauteur
+t mur_NormalMap
+v Bump_Mapping
+f Bump_Mapping

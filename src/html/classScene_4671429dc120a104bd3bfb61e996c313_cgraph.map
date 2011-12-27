@@ -1,0 +1,12 @@
+<area shape="rect" id="node3" href="$classObject.html#f3e7b3f053cb930fe0bcce2002eea7a7" title="Object::addModel" alt="" coords="376,55,499,83">
+<area shape="rect" id="node5" href="$classShader.html#1668cc7a404223914dc0102f04dc0d67" title="Shader::load" alt="" coords="391,5,484,33">
+<area shape="rect" id="node11" href="$classObjModel.html#6ac60723a4f0dfaaaeabbe0f8873e4da" title="ObjModel::load" alt="" coords="384,359,491,387">
+<area shape="rect" id="node17" href="$classScene.html#2d9fc68accf21b414b1b5b247360a63e" title="Scene::loadObjects" alt="" coords="172,195,308,223">
+<area shape="rect" id="node29" href="$classCamera.html#508e66f52e3b77ff209c01dc415d84da" title="Camera::move" alt="" coords="188,297,292,325">
+<area shape="rect" id="node31" href="$classObject.html#f303d8e42a35bf197efde2cb9b27f833" title="Object::saveModelMatrix" alt="" coords="159,347,321,375">
+<area shape="rect" id="node7" href="$classErrorLog.html#40988a1a9d767c97060bb83638ffc2e8" title="ErrorLog::getInstance" alt="" coords="553,258,697,286">
+<area shape="rect" id="node9" href="$classErrorLog.html#4ed68a1c6a3781785c15804dbb5dc9bb" title="ErrorLog::reportError" alt="" coords="556,157,695,185">
+<area shape="rect" id="node14" href="$classVector3.html#9b147a862a1b86ed2e5b735d19da3da1" title="Vector3::normalize" alt="" coords="560,359,691,387">
+<area shape="rect" id="node20" href="$classObject.html#9f5391f673ec9a6003a24b7501f87710" title="Object::addObject" alt="" coords="375,106,500,134">
+<area shape="rect" id="node25" href="$classObject.html#3f791496e7faa8e728268b88f56496d1" title="Object::setPosition" alt="" coords="372,207,503,235">
+<area shape="rect" id="node27" href="$classObject.html#27a19187ba6283151bc271d5927c6abc" title="Object::setRotation" alt="" coords="371,309,504,337">

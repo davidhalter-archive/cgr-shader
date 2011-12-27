@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="45">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>../../../Sourcecode/src/camera.h</itemPath>
+      <itemPath>../../../Sourcecode/src/errorlog.h</itemPath>
+      <itemPath>../../../Sourcecode/src/exception.h</itemPath>
+      <itemPath>../../../Sourcecode/src/global.h</itemPath>
+      <itemPath>../../../Sourcecode/src/input.h</itemPath>
+      <itemPath>../../../Sourcecode/src/light.h</itemPath>
+      <itemPath>../../../Sourcecode/src/main.h</itemPath>
+      <itemPath>../../../Sourcecode/src/material.h</itemPath>
+      <itemPath>../../../Sourcecode/src/object.h</itemPath>
+      <itemPath>../../../Sourcecode/src/objmodel.h</itemPath>
+      <itemPath>../../../Sourcecode/src/particlesystem.h</itemPath>
+      <itemPath>../../../Sourcecode/src/scene.h</itemPath>
+      <itemPath>../../../Sourcecode/src/shader.h</itemPath>
+      <itemPath>../../../Sourcecode/src/shaderloader.h</itemPath>
+      <itemPath>../../../Sourcecode/src/skybox.h</itemPath>
+      <itemPath>../../../Sourcecode/src/terrain.h</itemPath>
+      <itemPath>../../../Sourcecode/src/text.h</itemPath>
+      <itemPath>../../../Sourcecode/src/textfile.h</itemPath>
+      <itemPath>../../../Sourcecode/src/texture.h</itemPath>
+      <itemPath>../../../Sourcecode/src/vmath.h</itemPath>
+      <itemPath>../../../Sourcecode/src/water.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>../../../Sourcecode/src/camera.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/errorlog.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/input.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/light.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/main.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/material.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/object.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/objmodel.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/particlesystem.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/scene.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/shader.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/shaderloader.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/skybox.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/terrain.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/text.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/textfile.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/texture.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/vmath.cpp</itemPath>
+      <itemPath>../../../Sourcecode/src/water.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceEncoding>UTF-8</sourceEncoding>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Sourcecode/src/camera.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/camera.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/errorlog.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/errorlog.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/exception.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/global.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/input.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/input.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/light.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/light.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/main.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/main.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/material.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/material.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/object.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/object.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/objmodel.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/objmodel.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/particlesystem.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/particlesystem.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/scene.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/scene.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/shader.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/shader.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/shaderloader.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/shaderloader.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/skybox.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/skybox.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/terrain.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/terrain.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/text.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/text.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/textfile.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/textfile.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/texture.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/texture.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/vmath.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/vmath.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/water.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/water.h">
+        <itemTool>3</itemTool>
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cCompilerTool>
+          <developmentMode>5</developmentMode>
+        </cCompilerTool>
+        <ccCompilerTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-lGL -lSDL -lGLU -lGLEW</commandLine>
+        </ccCompilerTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../../Sourcecode/src/camera.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/camera.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/errorlog.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/errorlog.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/exception.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/global.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/input.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/input.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/light.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/light.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/main.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/main.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/material.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/material.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/object.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/object.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/objmodel.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/objmodel.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/particlesystem.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/particlesystem.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/scene.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/scene.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/shader.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/shader.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/shaderloader.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/shaderloader.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/skybox.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/skybox.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/terrain.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/terrain.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/text.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/text.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/textfile.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/textfile.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/texture.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/texture.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/vmath.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/vmath.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/water.cpp">
+        <itemTool>1</itemTool>
+      </item>
+      <item path="../../../Sourcecode/src/water.h">
+        <itemTool>3</itemTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

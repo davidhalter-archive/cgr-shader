@@ -1,0 +1,12 @@
+a 0.0 0.0 0.0 0.0
+d 0.0 0.0 0.0 0.0
+s 0.0 0.0 0.0 0.0
+e 0.0 0.0 0.0 0.0
+h 0.0
+t texture_1.bmp
+t texture_2.bmp
+t texture_3.bmp
+t texture_4.bmp
+t texture_n.bmp
+v shader.vert
+f shader.frag

@@ -1,0 +1,11 @@
+<area shape="rect" id="node3" href="$classMaterial.html#0302643687922bac655deec986d98ede" title="Material::call" alt="" coords="221,5,317,33">
+<area shape="rect" id="node5" href="$classVector3.html#2f1fdf1c794d6337892d5502459d5ccb" title="Vector3::dotProduct" alt="" coords="201,55,337,83">
+<area shape="rect" id="node7" href="$classShader.html#795453242dcfac88d619231fc32711fe" title="Shader::enable" alt="" coords="431,131,537,159">
+<area shape="rect" id="node9" href="$classShader.html#4250d3f01017646653f0851b68d28192" title="Shader::getAttributeLocation" alt="" coords="176,258,363,286">
+<area shape="rect" id="node15" href="$classShader.html#dfc9d0c4735b50e2d7f170a79f39e717" title="Shader::loadTextureTU0" alt="" coords="189,309,349,337">
+<area shape="rect" id="node19" href="$classShader.html#104e43160017a4631de0368983c1aaf0" title="Shader::loadTextureTU1" alt="" coords="189,359,349,387">
+<area shape="rect" id="node23" href="$classShader.html#d7ddc0bb45c907553e11921271e09a7d" title="Shader::loadTextureTU2" alt="" coords="189,207,349,235">
+<area shape="rect" id="node27" href="$classVector3.html#9b147a862a1b86ed2e5b735d19da3da1" title="Vector3::normalize" alt="" coords="204,410,335,438">
+<area shape="rect" id="node29" href="$classShader.html#24356fe14869b55a121e0ce591b82c34" title="Shader::useDefaultShader" alt="" coords="184,106,355,134">
+<area shape="rect" id="node11" href="$classErrorLog.html#40988a1a9d767c97060bb83638ffc2e8" title="ErrorLog::getInstance" alt="" coords="412,309,556,337">
+<area shape="rect" id="node13" href="$classErrorLog.html#4ed68a1c6a3781785c15804dbb5dc9bb" title="ErrorLog::reportError" alt="" coords="415,258,553,286">

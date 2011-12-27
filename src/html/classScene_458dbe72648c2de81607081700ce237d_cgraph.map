@@ -1,0 +1,9 @@
+<area shape="rect" id="node3" href="$classCamera.html#ef57d586be7cbb9bcec7eb1e33b5c7c7" title="Camera::call" alt="" coords="284,5,377,33">
+<area shape="rect" id="node5" href="$classShader.html#d8368fcacdb176733217c6a15f3ad543" title="Shader::disable" alt="" coords="275,55,387,83">
+<area shape="rect" id="node7" href="$classLight.html#9f57ad93641207810fda44ba6bb9cd18" title="Light::getPosition" alt="" coords="269,106,392,134">
+<area shape="rect" id="node9" href="$classMatrix4.html#8412458379c9a664437d74e6a1a28443" title="Matrix4::inverse" alt="" coords="275,157,387,185">
+<area shape="rect" id="node11" href="$classShader.html#aaad9547314bef929463a99c4d0865f4" title="Shader::loadTextureTU4" alt="" coords="251,207,411,235">
+<area shape="rect" id="node17" href="$classObject.html#9354f4512c2b96d2ddd6a7372c67da82" title="Object::render" alt="" coords="279,258,383,286">
+<area shape="rect" id="node19" href="$classLight.html#8d894f4b7a8b54410aee3d1c2d42a81a" title="Light::setPosition" alt="" coords="269,309,392,337">
+<area shape="rect" id="node13" href="$classErrorLog.html#40988a1a9d767c97060bb83638ffc2e8" title="ErrorLog::getInstance" alt="" coords="460,182,604,210">
+<area shape="rect" id="node15" href="$classErrorLog.html#4ed68a1c6a3781785c15804dbb5dc9bb" title="ErrorLog::reportError" alt="" coords="463,233,601,261">

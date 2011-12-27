@@ -1,0 +1,7 @@
+<area shape="rect" id="node3" href="$classMatrix4.html#24762cf2790491f072879678e28e51ab" title="Matrix4\&lt; float \&gt;::createRotationAroundAxis" alt="" coords="139,5,411,33">
+<area shape="rect" id="node5" href="$classMatrix4.html#7b68a758485c1f5b8239ed7632658519" title="Creates translation matrix." alt="" coords="165,55,384,83">
+<area shape="rect" id="node7" href="$classQuaternion.html#6444beef0766cd0351408efe45b2a312" title="Quaternion::fromMatrix" alt="" coords="199,106,351,134">
+<area shape="rect" id="node9" href="$classMatrix4.html#8412458379c9a664437d74e6a1a28443" title="Matrix4\&lt; float \&gt;::inverse" alt="" coords="195,157,355,185">
+<area shape="rect" id="node11" href="$classMatrix4.html#fe91d8df25ea2a6b631cbcb288996c5d" title="Matrix4\&lt; float \&gt;::operator*" alt="" coords="189,207,360,235">
+<area shape="rect" id="node13" href="$classQuaternion.html#6b288de17b57095b1c8c01c9688308f8" title="Quaternion::transform" alt="" coords="201,258,348,286">
+<area shape="rect" id="node15" href="$classMatrix4.html#f58e316035425ba563a23e3b8f53c73c" title="Matrix4\&lt; float \&gt;::transpose" alt="" coords="187,309,363,337">

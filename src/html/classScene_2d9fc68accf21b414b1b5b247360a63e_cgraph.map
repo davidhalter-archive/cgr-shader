@@ -1,0 +1,8 @@
+<area shape="rect" id="node3" href="$classObject.html#f3e7b3f053cb930fe0bcce2002eea7a7" title="Object::addModel" alt="" coords="195,5,317,33">
+<area shape="rect" id="node5" href="$classObject.html#9f5391f673ec9a6003a24b7501f87710" title="Object::addObject" alt="" coords="193,55,319,83">
+<area shape="rect" id="node7" href="$classErrorLog.html#40988a1a9d767c97060bb83638ffc2e8" title="ErrorLog::getInstance" alt="" coords="372,106,516,134">
+<area shape="rect" id="node9" href="$classObjModel.html#6ac60723a4f0dfaaaeabbe0f8873e4da" title="ObjModel::load" alt="" coords="203,157,309,185">
+<area shape="rect" id="node14" href="$classErrorLog.html#4ed68a1c6a3781785c15804dbb5dc9bb" title="ErrorLog::reportError" alt="" coords="375,207,513,235">
+<area shape="rect" id="node17" href="$classObject.html#3f791496e7faa8e728268b88f56496d1" title="Object::setPosition" alt="" coords="191,258,321,286">
+<area shape="rect" id="node19" href="$classObject.html#27a19187ba6283151bc271d5927c6abc" title="Object::setRotation" alt="" coords="189,309,323,337">
+<area shape="rect" id="node12" href="$classVector3.html#9b147a862a1b86ed2e5b735d19da3da1" title="Vector3::normalize" alt="" coords="379,157,509,185">

@@ -1,0 +1,8 @@
+<area shape="rect" id="node3" href="$classMatrix3.html#eb6ba0df4e00237b723092bdb5c94088" title="Matrix3::createRotationAroundAxis" alt="" coords="139,5,363,33">
+<area shape="rect" id="node7" href="$classQuaternion.html#9782ce0b6a21cd183d2c4c6cccbdccb7" title="Quaternion::fromMatrix" alt="" coords="175,55,327,83">
+<area shape="rect" id="node9" href="$classMatrix3.html#f183cabaf18b9922fd11e517c5cf26b1" title="Matrix3::fromOde" alt="" coords="191,106,311,134">
+<area shape="rect" id="node11" href="$classMatrix3.html#bd84667793375507dc98fc8e896d89b3" title="Matrix3::operator*" alt="" coords="189,157,312,185">
+<area shape="rect" id="node13" href="$classQuaternion.html#1d74ff2d4fe84758f70b396de5b3f749" title="Quaternion::rotMatrix" alt="" coords="179,207,323,235">
+<area shape="rect" id="node15" href="$classMatrix4.html#1364b4ea9ddb21af98db5256f82a0515" title="Matrix4\&lt; float \&gt;::setRotation" alt="" coords="157,258,344,286">
+<area shape="rect" id="node17" href="$classMatrix3.html#afac87a5bb5afd70a7a8b39257f28558" title="Matrix3::transpose" alt="" coords="187,309,315,337">
+<area shape="rect" id="node5" href="$classSkybox.html#2eccbd88fee9aa9db1554f2fee57e037" title="Skybox::render" alt="" coords="411,5,520,33">
