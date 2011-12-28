@@ -32,7 +32,7 @@ $(BUILD_DIR)%.o: $(SRC_DIR)%.cpp
 
 # The include stops 'make' complaining if any .d files 
 # are not found (eg. on initial build).
-include $(DEPENDENCIES)
+-include $(DEPENDENCIES)
 
 clean:
 	rm build/*
