@@ -18,7 +18,7 @@ DEPENDENCIES=$(patsubst %.o, %.d, $(OBJECTS))
 all: $(SOURCES) $(EXECUTABLE)
 	
 $(EXECUTABLE): $(OBJECTS)
-	$(CC) $(LDFLAGS) $(OBJECTS) -o $(BUILD_DIR)$@
+	$(CC) $(OBJECTS) $(LDFLAGS) -o $(BUILD_DIR)$@
 
 # The -MP adds a 'phony' target for all prerequisite headers
 # to stop 'make' complaining if you remove a header
