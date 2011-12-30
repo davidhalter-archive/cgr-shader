@@ -156,8 +156,8 @@ Scene::~Scene()
 //--------------------------------------------------
 void Scene::renderShadowMapping()
 {
-  /*
-	//sun->setPosition(sun->getPosition()[0]*7000, sun->getPosition()[1]*7000, sun->getPosition()[2]*7000, 1); //Don't remove!!
+	Matrix4<float> lightModelViewMatrix, lightProjectionMatrix, cameraViewMatrix;
+	sun->setPosition(sun->getPosition()[0]*7000, sun->getPosition()[1]*7000, sun->getPosition()[2]*7000, 1); //Don't remove!!
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);	// Clear the screen and the depth buffer
 	glLoadIdentity();
@@ -168,18 +168,22 @@ void Scene::renderShadowMapping()
   glPushMatrix();
 
   //Projektionsmatrix verändern
-  //glLoadIdentity();
-  //glOrtho(-3000, 3000, -3000, 3000, 4000, 9000);
+  glLoadIdentity();
+  glOrtho(-3000, 3000, -3000, 3000, 4000, 9000);
 
   glMatrixMode(GL_MODELVIEW);
 
   // render shadow map
-  //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); //Buffer löschen
+  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); //Buffer löschen
   glLoadIdentity(); //Einheitsmatrix laden
 
-  camera->call(); //Camera setzen
-  //gluLookAt(sun->getPosition()[0], sun->getPosition()[1], sun->getPosition()[1], 0,0,0, 0,1,0);
+  //camera->call(); //Camera setzen
+  gluLookAt(sun->getPosition()[0], sun->getPosition()[1], sun->getPosition()[1], 0,0,0, 0,1,0);
+	glGetFloatv(GL_MODELVIEW_MATRIX, lightModelViewMatrix);
+	glGetFloatv(GL_PROJECTION_MATRIX, lightProjectionMatrix);
+
   draw(false); //Szene zeichnen
+	glBindTexture(GL_TEXTURE_2D, shadowMap);
   glCopyTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT, 0, 0, shMapW, shMapH, 0);
 
   
@@ -188,18 +192,31 @@ void Scene::renderShadowMapping()
   glMatrixMode(GL_PROJECTION);
   glPopMatrix();
   glMatrixMode(GL_MODELVIEW);
-  */
-  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); //Buffer löschen
+
   glLoadIdentity(); //Einheitsmatrix laden
-	camera->call();
-	draw(false);	
-  glCopyTexImage2D(GL_TEXTURE_2D, 0, GL_LUMINANCE, 0, 0, shMapW, shMapH, 0);
 
   //Szene rendern
   // clear the buffers
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); //Buffer löschen
 	glLoadIdentity();
 	camera->call();
+	glGetFloatv(GL_MODELVIEW_MATRIX, cameraViewMatrix);
+	//set texture #4
+	glActiveTexture(GL_TEXTURE4);
+	glMatrixMode(GL_TEXTURE);
+	glLoadIdentity();
+	glMultMatrixf(lightProjectionMatrix);
+	glMultMatrixf(lightModelViewMatrix);
+	glMultMatrixf(cameraViewMatrix.inverse());
+	glTranslatef(0.5, 0.5, 0.5);
+	glScalef(0.5,0.5,0.5);
+	glMatrixMode(GL_MODELVIEW);
+
+	glActiveTexture(GL_TEXTURE0);
+
+	// give shader access to the shader
+	shadowMapping->loadTextureTU1(GL_TEXTURE_2D, shadowMap, "shadowMap");
+
 	draw(true);	
 
 	Shader::disable();
@@ -406,15 +423,15 @@ void Scene::update(double timeDifference)
 	if (input->isKeyDown(SDLK_3))
 	{
 		shadowMode = 2;
-		Shader::setDefaultShader(NULL);
-		//Shader::setDefaultShader(shadowMapping);
+		//Shader::setDefaultShader(NULL);
+		Shader::setDefaultShader(shadowMapping);
 	}
 
 	if (input->isKeyDown(SDLK_4))
 	{
 		shadowMode = 3;
-		Shader::setDefaultShader(NULL);
-		//Shader::setDefaultShader(shadowMapping);
+		//Shader::setDefaultShader(NULL);
+		Shader::setDefaultShader(shadowMapping);
 	}
 
 
