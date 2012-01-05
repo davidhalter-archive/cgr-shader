@@ -53,6 +53,8 @@ private:
 
 	unsigned int shadowMap;
 	Shader *shadowMapping;
+	Shader *shadowMappingAliased;
+  Shader *toonShader;
 	int shMapW;
 	int shMapH;
 

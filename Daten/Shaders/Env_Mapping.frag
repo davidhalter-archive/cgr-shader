@@ -13,7 +13,7 @@ void main()
 	
 	// add lighting to base color and mix
 	vec3 base = lightIntensity * baseColor;
-	envColor = mix(envColor, baseColor, mixRatio);
+	envColor = mix(envColor, base, mixRatio);
 	
 	gl_FragColor = vec4(envColor, 1.0);
 }

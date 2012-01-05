@@ -25,6 +25,8 @@ GLuint cubeMapDefines[6] =
 	GL_TEXTURE_CUBE_MAP_NEGATIVE_Z_ARB
 };
 
+float modelPosition[3] = {-1200, -42, -1200};
+
 //--------------------------------------------------
 Scene::Scene(Input *input)
 {
@@ -133,6 +135,13 @@ Scene::Scene(Input *input)
 
 	shadowMapping = new Shader();
 	shadowMapping->load("./Daten/Shaders/Shadow_Mapping.vert", "./Daten/Shaders/Shadow_Mapping.frag");
+	shadowMappingAliased = new Shader();
+	shadowMappingAliased->load("./Daten/Shaders/Shadow_Mapping.vert",
+														 "./Daten/Shaders/Shadow_Mapping_Aliased.frag");
+
+	// load toon shader
+	toonShader = new Shader();
+	toonShader->load("./Daten/Shaders/toon.vert", "./Daten/Shaders/toon.frag");
 }
 //--------------------------------------------------
 Scene::~Scene()
@@ -149,10 +158,13 @@ Scene::~Scene()
 	delete helpText;
 	delete envShader;
 	delete shadowMapping;
+	delete shadowMappingAliased;
+	delete toonShader;
 
 	glDeleteTextures(1, &envText);
 	glDeleteTextures(1, &shadowMap);
 }
+
 //--------------------------------------------------
 void Scene::renderShadowMapping()
 {
@@ -200,22 +212,36 @@ void Scene::renderShadowMapping()
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); //Buffer löschen
 	glLoadIdentity();
 	camera->call();
+
+	glLoadIdentity();
+	shadowMode = 2;
+	  int minus = (shadowMode % 2) ? -1 : 1;
+		gluLookAt(0,0,0, minus*(shadowMode<2),minus*(shadowMode<4 && shadowMode>=2),minus*(shadowMode>=4), 0,1,0);
+		glTranslatef(0, 100, 0);
+	cout << "temp(mode=" << shadowMode <<"): " << minus*(shadowMode<2) << ", " << minus*(shadowMode<4 && shadowMode>=2) << ", " << minus*(shadowMode>=4);
+  //glLoadIdentity();
+	//gluLookAt(0,0,0, 0,0,1, 0,1,0);
+	shadowMode = 2;
+
+
 	glGetFloatv(GL_MODELVIEW_MATRIX, cameraViewMatrix);
 	//set texture #4
 	glActiveTexture(GL_TEXTURE4);
 	glMatrixMode(GL_TEXTURE);
+
 	glLoadIdentity();
 	glMultMatrixf(lightProjectionMatrix);
 	glMultMatrixf(lightModelViewMatrix);
 	glMultMatrixf(cameraViewMatrix.inverse());
 	glTranslatef(0.5, 0.5, 0.5);
 	glScalef(0.5,0.5,0.5);
+
 	glMatrixMode(GL_MODELVIEW);
 
 	glActiveTexture(GL_TEXTURE0);
 
 	// give shader access to the shader
-	shadowMapping->loadTextureTU1(GL_TEXTURE_2D, shadowMap, "shadowMap");
+	shadowMapping->loadTextureTU4(GL_TEXTURE_2D, shadowMap, "shadowMap");
 
 	draw(true);	
 
@@ -247,6 +273,7 @@ void Scene::renderShadowMapping()
 
 	SDL_GL_SwapBuffers();
 }
+
 //--------------------------------------------------
 void Scene::renderShadowVolumes()
 {
@@ -331,6 +358,7 @@ void Scene::renderShadowVolumes()
 	SDL_GL_SwapBuffers();
 	glStencilFunc(GL_ALWAYS, 1, 0xFF);
 }
+
 //--------------------------------------------------
 void Scene::renderNormal()
 {
@@ -340,6 +368,7 @@ void Scene::renderNormal()
 	draw(true);												// Draw 3D stuff
 	SDL_GL_SwapBuffers();								// Swap the front buffer with the back buffer
 }
+
 //--------------------------------------------------
 void Scene::render()
 {
@@ -366,13 +395,12 @@ void Scene::render()
 		renderShadowVolumes();
 		break;
 	case 2:
-		renderShadowMapping();
-    break;
 	case 3:
 		renderShadowMapping();
-		break;
+    break;
 	}
 }
+
 //--------------------------------------------------
 void Scene::update(double timeDifference)
 {
@@ -434,10 +462,29 @@ void Scene::update(double timeDifference)
 		Shader::setDefaultShader(shadowMapping);
 	}
 
+	if (input->isKeyDown(SDLK_5))
+	{
+		shadowMode = 2;
+		//Shader::setDefaultShader(NULL);
+		Shader::setDefaultShader(shadowMappingAliased);
+	}
+
+	if (input->isKeyDown(SDLK_6))
+	{
+		shadowMode = 3;
+		//Shader::setDefaultShader(NULL);
+		Shader::setDefaultShader(shadowMappingAliased);
+	}
+
+	if (input->isKeyDown(SDLK_0))
+	{
+		shadowMode = 0;
+		Shader::setDefaultShader(toonShader);
+	}
 
 	if (input->isKeyDown(SDLK_h))
 	{
-		helpText->setText("==Computer Grafik: OpenGL Shader Praktikum==\n\nBewegen:        WASD- oder Pfeiltasten\nHöhe ändern:    R/F-Tasten\nKamera drehen:  Maus\nSchatten-Modus: Tasten 1-4\nBeenden:        ESC\n");
+		helpText->setText("==Computer Grafik: OpenGL Shader Praktikum==\n\nBewegen:        WASD- oder Pfeiltasten\nHöhe ändern:    R/F-Tasten\nKamera drehen:  Maus\nSchatten-Modus: Tasten 1-6\nBeenden:        ESC\n");
 	}
 	else
 	{
@@ -460,9 +507,12 @@ void Scene::update(double timeDifference)
 
 	armorRotation += (float)timeDifference * 0.004f;
 }
+
 //--------------------------------------------------
 void Scene::draw(bool activateShaders)
 {
+	toonShader->loadUniform1f("width", width);
+	toonShader->loadUniform1f("height", height);
 	sun->call();
 
 	// now let's draw our armor right here
@@ -470,12 +520,6 @@ void Scene::draw(bool activateShaders)
 
 	if (activateShaders)
 	{
-		float modelPosition[3];
-
-		modelPosition[0] = -1200;
-		modelPosition[1] = -42;
-		modelPosition[2] = -1200;
-
 		// uncomment this if you implemented environment mapping
 		envShader->enable();
 
@@ -500,8 +544,7 @@ void Scene::draw(bool activateShaders)
 		envShader->loadUniform1f("mixRatio", 0.5f);
 
 		glPushMatrix();
-		glTranslatef(modelPosition[0], modelPosition[1], modelPosition[2]);
-
+		//glTranslatef(modelPosition[0], modelPosition[1], modelPosition[2]);
 
 		glRotatef(armorRotation, 0, 1, 0);
 
@@ -522,7 +565,11 @@ void Scene::draw(bool activateShaders)
 	skybox->render(false);
 	terrain->render(false);
 	water->render(false);
-	mainObj->render(activateShaders);
+	if (Shader::defaultShader == toonShader){
+		mainObj->render(false);
+	}else{
+		mainObj->render(activateShaders);
+	}
 
 	Shader::disable();
 	torch1->render(false);
@@ -533,16 +580,19 @@ void Scene::draw(bool activateShaders)
 	helpText->render(activateShaders);
 	Shader::useDefaultShader();
 }
+
 //--------------------------------------------------
 void Scene::drawShadowVolumes()
 {
 	mainObj->renderShadowVolumes(sun);
 }
+
 //--------------------------------------------------
 int Scene::countInsideVolume()
 {
 	return mainObj->countInsideVolume(camera, sun);
 }
+
 //--------------------------------------------------
 void Scene::updateCubeMap()
 {
@@ -554,7 +604,7 @@ void Scene::updateCubeMap()
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluPerspective(90, 1.0f, 1, 50000);  // get a 90 deg. fov with an
-	// aspect ratio of 1
+																			 // aspect ratio of 1
 	glMatrixMode(GL_MODELVIEW);
 
 	// now render the scene six times
@@ -566,42 +616,12 @@ void Scene::updateCubeMap()
 		// Reset modelview matrix.
 		glLoadIdentity();
 
-		// -> set camera for rendering
-		// TODO:
-		// ******
-		switch (i)
-		{
-		case 0:
-		{
-			break;
-		}
-		case 1:
-		{
-			break;
-		}
-		case 2:
-		{
-			break;
-		}
-		case 3:
-		{
-			break;
-		}
-		case 4:
-		{
-			break;
-		}
-		case 5:
-		{
-			break;
-		}
-		}
+	  int minus = (shadowMode % 2) ? -1 : 1;
+		// x+,x-,y+,y-,z+,z-
+		gluLookAt(0,0,0, minus*(i<2),minus*(i<4 && i>2),minus*(i>4), 0,1,0);
 
 		//to avoid uneven lighting in the cube map, we have to call the light again here (after changing the camera)
 		sun->call();
-
-		glTranslated(1200.0, -42.0, 1200.0);      // this is just temporary
-
 
 		// now render the objects
 		skybox->render(false);
@@ -615,20 +635,15 @@ void Scene::updateCubeMap()
 
 
 		// copy read buffer to target part of cube map
-		// TODO:
-		// ******
-    /*
-		glCopyTexSubImage2D( ,							   // target
-		                     ,                             // level
-		                     ,                             // xoffset
-		                     ,                             // yoffset
-		                     ,                             // x
-		                     ,                             // y
-		                     ,							   // width
-		                     );							   // height
+		glCopyTexSubImage2D(cubeMapDefines[i],						 // target
+												0,                             // level
+												0,                             // xoffset
+												0,                             // yoffset
+												0,                             // x
+												0,                             // y
+												CUBE_MAP_SIZE,								 // width
+												CUBE_MAP_SIZE);								 // height
 
-    
-    */
 		glFlush();
 		glDisable(GL_TEXTURE_CUBE_MAP_ARB);
 	}
@@ -640,6 +655,7 @@ void Scene::updateCubeMap()
 	gluPerspective(50.0, (float)width / (float)height, 1, 100000);
 	glMatrixMode(GL_MODELVIEW);
 }
+
 //--------------------------------------------------
 void Scene::loadObjects(string filename, Object* obj)
 {

@@ -5,14 +5,6 @@ varying vec4 shadowCoord;
 
 void main()
 {
-	//ohne Antialiasing
-	/*float d=shadow2DProj(shadowMap, shadowCoord).x; 
-	if(d<1.0)
-		gl_FragColor = vec4((texture2D(base, gl_TexCoord[0].st)-0.5).xyz, 1.0);
-	else
-		gl_FragColor = texture2D(base, gl_TexCoord[0].st);*/		
-	
-		
 	//mit Antialiasing
 	
 	vec4 shadowCoordl=vec4(shadowCoord.x-1.0/1024.0, shadowCoord.y, shadowCoord.z, shadowCoord.a);

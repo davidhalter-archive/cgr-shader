@@ -146,6 +146,9 @@ void Shader::printShaderInfoLog(GLuint shader, string shaderName)
 		glGetShaderInfoLog(shader, infologLength, &charsWritten, infoLog);
 		logStream << shaderName << ": " << infoLog << endl;
 		log->reportError(logStream.str());
+		if (infoLog[0] != 0){
+			cout << logStream.str();
+		}
 		delete[] infoLog;
 	}
 }
